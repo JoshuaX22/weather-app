@@ -61,12 +61,12 @@
         }
 
         .app-logo {
-            font-family: 'Fraunces', serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--accent);
-            letter-spacing: -0.5px;
             margin-bottom: 4px;
+        }
+
+        .app-logo img {
+            max-width: 280px;
+            height: auto;
         }
 
         .app-tagline {
@@ -466,7 +466,7 @@
         ============================================ */
         @media (max-width: 480px) {
             .app-header { padding: 24px 0 16px; }
-            .app-logo { font-size: 1.6rem; }
+            .app-logo img { max-width: 200px; }
             .search-form { flex-direction: column; }
             .search-btn { padding: 12px; }
             .temperature { font-size: 3rem; }
@@ -480,7 +480,7 @@
 
         <!-- HEADER -->
         <header class="app-header">
-            <div class="app-logo">Weather Dashboard</div>
+            <div class="app-logo"><img src="logo.png" alt="Weather Dashboard"></div>
             <div class="app-tagline">Live weather data from around the world.</div>
         </header>
 
